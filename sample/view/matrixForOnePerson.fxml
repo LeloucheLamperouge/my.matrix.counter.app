@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
@@ -18,10 +21,49 @@
             <Image url="@../resourses/image002.gif" />
          </image>
       </ImageView>
-      <Label alignment="CENTER" layoutX="504.0" layoutY="10.0" prefHeight="25.0" prefWidth="27.0" text="22" textAlignment="CENTER" AnchorPane.bottomAnchor="765.0" AnchorPane.leftAnchor="504.0" AnchorPane.rightAnchor="269.0" AnchorPane.topAnchor="10.0">
-         <font>
-            <Font name="Arial Black" size="12.0" />
-         </font>
-      </Label>
+      <Label layoutX="23.0" layoutY="66.0" prefHeight="17.0" prefWidth="48.0" text="Имя :" />
+      <Label layoutX="23.0" layoutY="103.0" prefHeight="17.0" prefWidth="65.0" text="Фамилия :" />
+      <TextField layoutX="91.0" layoutY="62.0" prefHeight="25.0" prefWidth="163.0" promptText="введите имя" />
+      <TextField layoutX="91.0" layoutY="99.0" prefHeight="25.0" prefWidth="163.0" promptText="введите фамилию" />
+      <Label layoutX="23.0" layoutY="167.0" prefHeight="17.0" prefWidth="231.0" text="Дата рождения :" />
+      <DatePicker layoutX="23.0" layoutY="190.0" prefHeight="25.0" prefWidth="231.0" />
+      <TableView layoutX="6.0" layoutY="600.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="600.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Физика" />
+          <TableColumn prefWidth="75.0" text="Энергия" />
+            <TableColumn prefWidth="75.0" text="Эмоции" />
+            <TableColumn prefWidth="130.0" text="Название чакр" />
+            <TableColumn prefWidth="396.0" text="Область действия" />
+        </columns>
+      </TableView>
+      <Label layoutX="23.0" layoutY="277.0" prefHeight="25.0" prefWidth="48.0" text="Земля" />
+      <Label layoutX="23.0" layoutY="309.0" prefHeight="25.0" prefWidth="42.0" text="Небо" />
+      <Label layoutX="77.0" layoutY="293.0" prefHeight="25.0" prefWidth="42.0" text="итого" />
+      <Label layoutX="23.0" layoutY="260.0" prefHeight="17.0" prefWidth="194.0" text="До 40 лет (Для себя) :" />
+      <Label layoutX="22.0" layoutY="360.0" prefHeight="25.0" prefWidth="194.0" text="40-60 лет (Для социума) :" />
+      <Label layoutX="22.0" layoutY="392.0" prefHeight="25.0" prefWidth="42.0" text="Муж." />
+      <Label layoutX="22.0" layoutY="423.0" prefHeight="25.0" prefWidth="42.0" text="Жен." />
+      <Label layoutX="84.0" layoutY="407.0" prefHeight="25.0" prefWidth="42.0" text="итого" />
+      <Label layoutX="22.0" layoutY="465.0" prefHeight="25.0" prefWidth="194.0" text="После 60 лет (Духовное) :" />
+      <Label layoutX="60.0" layoutY="503.0" prefHeight="25.0" prefWidth="42.0" text="итого" />
+      <MenuBar layoutX="1.0" layoutY="8.0" prefHeight="25.0" prefWidth="130.0" AnchorPane.bottomAnchor="775.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="670.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
    </children>
 </AnchorPane>
