@@ -18,8 +18,8 @@ public class Person {
     public Person() {
     }
 
-    public Person(int id,int birthDay, int birthMonth, int birthYear) {
-        this.id = id;
+    public Person(int birthDay, int birthMonth, int birthYear) {
+
         this.birthDay = birthDay;
         this.birthMonth = birthMonth;
         this.birthYear = birthYear;
@@ -33,8 +33,8 @@ public class Person {
         this.gender = gender;
     }
 
-    public Person(int id, int birthDay, int birthMonth, int birthYear, String firstName, String lastName, String sex) {
-        this.id = id;
+    public Person(int birthDay, int birthMonth, int birthYear, String firstName, String lastName, String sex) {
+
         this.birthDay = birthDay;
         this.birthMonth = birthMonth;
         this.birthYear = birthYear;
