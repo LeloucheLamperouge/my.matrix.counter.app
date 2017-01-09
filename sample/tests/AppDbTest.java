@@ -1,10 +1,7 @@
 package sample.tests;
 
-import sample.controllers.AppDB;
+import sample.services.AppDB;
 import sample.models.Person;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 /**
@@ -46,5 +43,7 @@ public class AppDbTest {
         System.out.println(appDB.findById(2));
         System.out.println(appDB.findById(3));
         System.out.println(appDB.findById(1));
+
+
     }
 }
