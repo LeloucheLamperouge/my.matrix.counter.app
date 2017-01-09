@@ -12,7 +12,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("../view/matrixForOnePerson.fxml"));
         primaryStage.setTitle("Personal Matrix");
-        primaryStage.setScene(new Scene(root, 800, 650));
+        primaryStage.setScene(new Scene(root, 840, 650));
         primaryStage.show();
     }
 

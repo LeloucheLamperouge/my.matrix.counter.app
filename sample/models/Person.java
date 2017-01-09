@@ -5,39 +5,49 @@ package sample.models;
  */
 public class Person {
 
+    private int id;
+
     private int birthDay;
     private int birthMonth;
     private int birthYear;
 
     private String firstName;
     private String lastName;
-    private String sex;
+    private String gender;
 
     public Person() {
     }
 
-    public Person(int birthDay, int birthMonth, int birthYear) {
+    public Person(int id,int birthDay, int birthMonth, int birthYear) {
+        this.id = id;
         this.birthDay = birthDay;
         this.birthMonth = birthMonth;
         this.birthYear = birthYear;
     }
 
-    public String getSex() {
-        return sex;
+    public String getGender() {
+        return gender;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
-    public Person(int birthDay, int birthMonth, int birthYear, String firstName, String lastName, String sex) {
+    public Person(int id, int birthDay, int birthMonth, int birthYear, String firstName, String lastName, String sex) {
+        this.id = id;
         this.birthDay = birthDay;
         this.birthMonth = birthMonth;
         this.birthYear = birthYear;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.sex = sex;
+        this.gender = sex;
 
+    }
+    public int getId(){
+        return id;
+    }
+    public void setId(int id){
+        this.id = id;
     }
 
     public int getBirthDay() {
@@ -88,7 +98,7 @@ public class Person {
                 ", birthYear=" + birthYear +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", sex='" + sex + '\'' +
+                ", gender='" + gender + '\'' +
                 '}';
     }
 }

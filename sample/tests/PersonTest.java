@@ -8,7 +8,11 @@ import sample.models.Person;
 public class PersonTest {
 
     public static void main(String[] args) {
-        Person person = new Person(11,10,1982,"Ivan","Ivanov","Male");
+        Person person = new Person(45,11,10,1982,"Ivan","Ivanov","Male");
         System.out.println(person);
+
+        
+
     }
+
 }

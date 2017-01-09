@@ -5,9 +5,9 @@ import sample.utils.MatrixCount;
 /**
  * Created by Lelouch on 31.10.2016.
  */
-public class MatrixDataCount {
+public class MatrixData {
 
-    MatrixCount count = new MatrixCount();
+    private MatrixCount count = new MatrixCount();
 
     private int zeroYear;
     private int twentyYear;
@@ -66,7 +66,7 @@ public class MatrixDataCount {
 
 
 
-    public MatrixDataCount(Person person) {
+    public MatrixData(Person person) {
         this.zeroYear = count.counter(person.getBirthDay());
         this.twentyYear = count.counter(person.getBirthMonth());
         this.fortyYear = count.counter(person.getBirthYear());
